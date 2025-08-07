@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Job Application Form</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 20px;
+ background-color: #f4f4f4;
+ }
+ h1 {
+ text-align: center;
+ color: #333;
+ }
+ form {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ max-width: 600px;
+ margin: auto;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+ label {
+ display: block;
+ margin-top: 10px;
+ font-weight: bold;
+ }
+ input, select, textarea {
+ width: 100%;
+ padding: 8px;
+ margin-top: 5px;
+ border-radius: 4px;
+ border: 1px solid #ccc;
+ }
+ .checkbox-group {
+ margin-top: 5px;
+ }
+ .checkbox-group label {
+ display: inline-block;
+ margin-right: 10px;
+ font-weight: normal;
+ }
+ button {
+ margin-top: 15px;
+ padding: 10px 15px;
+ background-color: #007BFF;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ a {
+ display: block;
+ margin-top: 15px;
+ text-align: center;
+ color: #007BFF;
+ }
+ </style>
+</head>
+<body>
+ <h1>Job Application Form</h1>
+ <p style="max-width: 600px; margin: auto; text-align: center;">
+ Welcome to XYZ Tech! We are a fast-growing technology company dedicated to delivering
+innovative solutions in the digital space. Join us to work with a dynamic team and build a
+rewarding career.
+ </p>
+ <form>
+ <label for="name">Applicant Name:</label>
+ <input type="text" id="name" name="name" required>
+ <label for="email">Email ID:</label>
+ <input type="email" id="email" name="email" required>
+ <label for="role">Preferred Job Role:</label>
+ <select id="role" name="role">
+ <option value="backend">Backend</option>
+ <option value="frontend">Frontend</option>
+ <option value="fullstack">Full Stack</option>
+ </select>
+ <label>Skills:</label>
+ <div class="checkbox-group">
+ <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+ <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+ <label><input type="checkbox" name="skills" value="Python"> Python</label>
+ <label><input type="checkbox" name="skills" value="Java"> Java</label>
+ </div>
+ <label for="resume">Upload Resume:</label>
+ <input type="file" id="resume" name="resume">
+<label for="why">Why do you want this job?</label>
+ <textarea id="why" name="why" rows="5"></textarea>
+ <button type="submit">Submit Application</button>
+ <a href="https://www.xyzcompany.com" target="_blank">Visit our company page</a>
+ </form>
+</body>
+</html>
